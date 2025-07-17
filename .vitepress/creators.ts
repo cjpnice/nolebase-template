@@ -27,11 +27,6 @@ export const creators: Creator[] = [
     desc: '开发者，专注于大模型应用开发，数据分析，后端、GoLang、Python开发',
     links: [
       {
-        type: 'email',
-        icon: 'email',
-        link: 'cjpnice@163.com'
-      },
-      {
         type: 'github',
         icon: 'github',
         link: 'https://github.com/cjpnice'
