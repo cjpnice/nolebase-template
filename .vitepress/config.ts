@@ -30,6 +30,18 @@ export default defineConfig({
   description: siteDescription,
   ignoreDeadLinks: true,
   head: [
+    [
+      'script',
+      {
+        async: true,
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-JW1VK3062H',
+      },
+    ],
+    [
+      'script',
+      {},
+      "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-JW1VK3062H');",
+    ],
     ['meta', {
       name: 'theme-color',
       content: '#ffffff',
