@@ -17,5 +17,5 @@ Electron是一个基于node.js的跨平台桌面应用
 ## 代码地址
 [fast-formula](https://github.com/cjpnice/fast-formula/releases)
 喜欢的话给个star吧
-![[Pasted image 20250718161011.png]]
-![[Pasted image 20250718161039.png]]
+![](assets/Pasted%20image%2020250718162417.png)
+![](assets/Pasted%20image%2020250718162428.png)
