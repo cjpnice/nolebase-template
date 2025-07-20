@@ -19,30 +19,50 @@
 - Python 3.8+  
 - Chrome 浏览器  
 - ChromeDriver 驱动  
-  
+
 ## 安装步骤  
 1. **克隆项目**：  
-    ```bash  
-    git clone git@github.com:cjpnice/xiaohongshu_mcp.git  
-    ```2. **下载 ChromeDriver并解压**：  
-   - 从[官方网站](https://chromedriver.chromium.org/)下载与本地Chrome版本对应的 ChromeDriver  
-   - 解压到项目根目录  
-  
+```bash
+git clone git@github.com:cjpnice/xiaohongshu_mcp.git
+```
+
+2. **下载 ChromeDriver并解压**：
+- 从[官方网站](https://chromedriver.chromium.org/)下载与本地Chrome版本对应的 ChromeDriver  
+- 解压到项目根目录 
+
 3. **安装Python环境**：  
-   - 创建虚拟环境,推荐使用uv进行管理，并安装依赖  
-    ```bash  
-    cd xiaohongshu_mcp  
-    uv python pin 3.12    uv init --bare    uv venv    .venv\Scripts\activate # windows激活环境方式  
-    source .venv/bin/activate # MaxOS/Linux激活环境方式  
-    uv pip install -r requirements.txt  
-    ```  
-## 使用说明  
-  
+- 创建虚拟环境,推荐使用uv进行管理，并安装依赖  
+```bash
+cd xiaohongshu_mcp
+uv python pin 3.12
+uv init --bare
+uv venv
+.venv\Scripts\activate # windows激活环境方式
+source .venv/bin/activate # MaxOS/Linux激活环境方式
+uv pip install -r requirements.txt
+```
+
+## 使用说明
 ### MCP Server 配置  
 CHROME_DRIVER_PATH设置为ChromeDriver可执行文件的位置  
+
 ```json  
-{  
-  "mcpServers": {    "xiaohongshu_mcp": {      "command": "uv",      "args": [        "--directory",        "/PATH/TO/PARENT/FOLDER/xiaohongshu_mcp",        "run",        "mcp_server.py"      ],      "env": {        "CHROME_DRIVER_PATH": "/PATH/TO/PARENT/FOLDER/chromedriver/chromedriver.exe"      }    }  }}  
+{
+  "mcpServers": {
+    "xiaohongshu_mcp": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/PATH/TO/PARENT/FOLDER/xiaohongshu_mcp",
+        "run",
+        "mcp_server.py"
+      ],
+      "env": {
+        "CHROME_DRIVER_PATH": "/PATH/TO/PARENT/FOLDER/chromedriver/chromedriver.exe"
+      }
+    }
+  }
+}
 ```  
   
 服务器默认使用 stdio 传输协议运行。  
