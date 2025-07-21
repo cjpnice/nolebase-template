@@ -29,9 +29,9 @@ export const creators: Creator[] = [
       {
         type: 'github',
         icon: 'github',
-        link: 'https://github.com/cjpnice'
+        link: 'https://github.com/cjpnice',
       },
-    ]
+    ],
   },
 ].map<Creator>((c) => {
   c.avatar = c.avatar || getAvatarUrl(c.username)
