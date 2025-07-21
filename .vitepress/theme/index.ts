@@ -37,7 +37,7 @@ import { creators } from '../creators'
 
 import AppContainer from './components/AppContainer.vue'
 import DocFooter from './components/DocFooter.vue'
-import HomePage from './components/HomePage.vue'
+// import HomePage from './components/HomePage.vue'
 import Share from './components/Share.vue'
 import TocList from './components/TocList.vue'
 
@@ -84,7 +84,7 @@ const ExtendedTheme: Theme = {
      * https://github.com/vuejs/vitepress/issues/1918
      */
 
-    app.component('HomePage', HomePage)
+    // app.component('HomePage', HomePage)
     app.component('DocFooter', DocFooter)
     app.component('Share', Share)
     app.component('TocList', TocList)
