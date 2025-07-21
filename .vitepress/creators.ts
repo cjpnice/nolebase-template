@@ -16,25 +16,22 @@ export interface Creator {
   emailAliases?: string[]
 }
 
-const getAvatarUrl = (name: string) => `https://github.com/${name}.png`
-
 export const creators: Creator[] = [
   {
-    name: 'cjpnice',
+    name: '',
     avatar: '',
     username: 'CHEN',
-    title: '作者信息',
-    desc: '开发者，专注于大模型应用开发，数据分析，后端、GoLang、Python开发',
+    title: '小红书MCP服务',
+    desc: '基于Selenium网页自动化技术实现与小红书平台的交互MCP服务，提供搜索文章、查看内容、阅读评论和发表评论等功能',
     links: [
       {
         type: 'github',
         icon: 'github',
-        link: 'https://github.com/cjpnice',
+        link: 'https://github.com/cjpnice/xiaohongshu_mcp',
       },
     ],
   },
 ].map<Creator>((c) => {
-  c.avatar = c.avatar || getAvatarUrl(c.username)
   return c as Creator
 })
 
